@@ -10,10 +10,10 @@ DSH Web GUI 的触控优先显示调节插件（Android）：界面缩放 50–2
 
 ## 支持环境：仅 DSHA
 
-> **本插件仅支持 DSHA**（Android 上以 proot/Ubuntu 运行 dsh、触控屏 Web GUI 的环境）：其交互设计（触控目标尺寸、缩放档位、DPI 读数）与持久化语义按 DSHA 手机场景实现。
-> **桌面版 dsh（Desktop/CLI）不适用**：桌面环境有原生缩放体系，本插件的调节项与语义不匹配。
+> **本插件仅面向 DSHA**（Android 上以 proot/Ubuntu 运行 dsh、触控屏 Web GUI 的环境）：其交互设计（触控目标尺寸、缩放档位、DPI 读数）与持久化语义按 DSHA 手机场景实现。
+> **桌面版 dsh（Desktop/CLI）不需要它**：桌面环境有原生显示缩放体系，触控调节的场景不存在。
 >
-> **DSHA only.** This plugin targets the DSHA touch-first Web GUI on Android. It does not apply to desktop dsh.
+> **DSHA only.** This plugin targets the DSHA touch-first Web GUI on Android. Desktop dsh does not need it — desktops have native display scaling.
 
 ## 功能
 
