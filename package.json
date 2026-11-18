@@ -1,0 +1,47 @@
+{
+  "name": "dsh-dpi-tuner",
+  "version": "0.3.13",
+  "description": "Touch-first display tuning for the DSH Web GUI (Android): interface zoom 50–200%, conversation font size 10–22 px via the official theme service, live DPI readout; the zoom preference persists across restarts and random loopback ports.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "zoom",
+    "dpi",
+    "font-size",
+    "android",
+    "accessibility"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings-general",
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  }
+}

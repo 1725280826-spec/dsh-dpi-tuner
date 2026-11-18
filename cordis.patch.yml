@@ -1,0 +1,12 @@
+# dsh-dpi-tuner — touch-first display tuning (zoom / font / DPI) for the Web GUI.
+#
+# One row; it replaces no official DSH component. The Client half owns all
+# rendering plus the browser-side zoom preference (host cookie + localStorage);
+# the conversation font size is written through the official ui-theme settings
+# scope, so the Host half owns no state of its own.
+#
+# The row's `name` must stay equal to the package name: the client module
+# system resolves a package's browser artifact from its Loader entry name.
+- insert:
+    - id: dpi-tuner
+      name: dsh-dpi-tuner

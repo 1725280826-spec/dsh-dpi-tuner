@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Display tuner",
+    "description": "Touch-first display tuning: interface zoom (50–200%), conversation font size (10–22 px) and a live DPI readout; the zoom persists across restarts and random loopback ports, the font size through the official ui-theme settings."
+  }
+}
